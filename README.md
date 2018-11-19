@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/badge/taille-27Ko-brightgreen.svg)](https://www.npmjs.com/package/magic_hitler)
 [![github](https://img.shields.io/badge/Disponible%20sur-GitHub-red.svg)](https://github.com/JacqueSatan/Magic-Hitler-npm-module)
 [![github](https://img.shields.io/badge/et-npm-yellow.svg)](https://www.npmjs.com/package/magic_hitler)
-La mise en page n'est pas totalement prise en charge par GitHub, [cliquez ici](https://www.npmjs.com/package/magic_hitler lien vers npm) pour y voir plus clair.
+La mise en page n'est pas totalement prise en charge par GitHub, [cliquez ici](https://www.npmjs.com/package/magic_hitler) pour y voir plus clair.
 ## Sommaire
     1 - Installation
     2 - Utilisation
