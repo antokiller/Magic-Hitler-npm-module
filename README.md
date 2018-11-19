@@ -1,5 +1,9 @@
 # Magic Hitler
 # Discord Raid Bot
+[![npm](https://img.shields.io/npm/v/magic_hitler.svg)](https://www.npmjs.com/package/magic_hitler)
+[![npm](https://img.shields.io/badge/taille-27Ko-brightgreen.svg)](https://www.npmjs.com/package/magic_hitler)
+[![github](https://img.shields.io/badge/Disponible%20sur-GitHub-red.svg)](https://github.com/JacqueSatan/Magic-Hitler-npm-module)
+[![github](https://img.shields.io/badge/et-npm-yellow.svg)](https://www.npmjs.com/package/magic_hitler)
 ## Sommaire
     1 - Installation
     2 - Utilisation
