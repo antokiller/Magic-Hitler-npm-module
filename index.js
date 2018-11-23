@@ -1,4 +1,4 @@
-const log = (message) => console.log(message)
+const log = (message) => console.log(message);
 const scripts = (option) => require(`./scripts/${option}.js`);
 const t = require('timestamp-to-date');
 const readline = require('readline');
