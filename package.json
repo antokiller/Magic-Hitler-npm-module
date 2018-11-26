@@ -1,36 +1,94 @@
 {
-  "name": "magic_hitler",
+  "_args": [
+    [
+      "magic_hitler",
+      "/home/hariel/Téléchargements"
+    ]
+  ],
+  "_from": "magic_hitler@latest",
+  "_hasShrinkwrap": false,
+  "_id": "magic_hitler@1.0.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/magic_hitler",
+  "_nodeVersion": "8.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/magic_hitler_1.0.4_1543245222916_0.18935368355655324"
+  },
+  "_npmUser": {
+    "email": "dsicrod@gmail.com",
+    "name": "magic_hitler"
+  },
+  "_npmVersion": "3.5.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "magic_hitler",
+    "raw": "magic_hitler",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_shasum": "3cac8d78279b3ce76b66dc2c2408ed5573f38097",
+  "_shrinkwrap": null,
+  "_spec": "magic_hitler",
+  "_where": "/home/hariel/Téléchargements",
+  "author": {
+    "name": "Magic Hitler"
+  },
+  "bugs": {
+    "url": "https://github.com/JacqueSatan/Magic-Hitler-npm-module/issues"
+  },
   "dependencies": {
     "discord.js": "^11.4.2",
     "timestamp-to-date": "^1.1.0"
   },
-  "version": "1.0.2",
   "description": "API Discord pour bot raid (discord.js)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 17,
+    "integrity": "sha512-zB/GhKzioP5AYOdRv9qG1YfUaqrAkD2Vq7R3IVJOg6xe2KnZeKNjfKUoT9iZ1rwQ1nFtyBXh0YkFTD5ddi4AZg==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb/A2nCRA9TVsSAnZWagAATZoQAIFmMSY8nGDrAbNEGTzx\nhQpOIoKZ6NBphpuLrUcXLS8BnvTXIvU9i4RWep0GQ1SCMUKewTwKp+eRIM6A\n9YkJXpzXMp1GFAeVfpdNn5ZTqJVDTt+qUGzJLYycfjGYHQyMXcDnNVmK0gZf\npnvTwE7yEE11s4kjhMzm4jPdq8b/i51VaVZdke2UX9tTmYqNAL0jKWZNbJjA\nfaHDu98DocoYo+aTO4ptoF5DugIDizrRJtYBdD/Yal+ndaWEXLyoPfqaE4sj\n1j9ku8+jpCxQTKXQ6KOIZqSytEnEg4SLgxxa87l/I3/bVDgDiyv4j2T4mIX2\nmOgZoWtxcqc7j2ADOWBfnt3BeKWSM2rCWuuN42Fgc5QT5jxzZWnmKFGTXm2m\ndmJwGSr19pZVHBiYJbEsVyksxD8Q5efp4RQSjeztmn3EHubzII2uIsXKG5iQ\nDgyMgyPq2tdrEJQdlzjo3F1PomMarBTwLDZTkX7Yg4jWoPgbTgXNMObd13n/\n7E0w4ZUG/85Kseu5jxZTpjd7ilnqcnGNr/od3VKMjrY9JFeBrK6uhVmxPgkq\n0wRKc5LQcPEzeVEvyi8R3EWvLeEsfSMFLavWqm5WBWJiy932ncTQ7NWm4urM\n0crjGnGYBQ2B907jKNJONMxS9JdVkQUrpXF/dnSVRxtyexudgaIBqUJcb/jM\nPtXR\r\n=zByl\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "3cac8d78279b3ce76b66dc2c2408ed5573f38097",
+    "tarball": "https://registry.npmjs.org/magic_hitler/-/magic_hitler-1.0.4.tgz",
+    "unpackedSize": 32981
   },
+  "homepage": "https://github.com/JacqueSatan/Magic-Hitler-npm-module#readme",
+  "keywords": [
+    "api",
+    "bot",
+    "desctruction",
+    "discord",
+    "discord.js",
+    "hitler",
+    "magic",
+    "module",
+    "npm",
+    "raid",
+    "server"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "magic_hitler",
+      "email": "dsicrod@gmail.com"
+    }
+  ],
+  "name": "magic_hitler",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JacqueSatan/Magic-Hitler-npm-module.git"
   },
-  "keywords": [
-    "discord",
-    "raid",
-    "bot",
-    "api",
-    "module",
-    "magic",
-    "hitler",
-    "npm",
-    "discord.js",
-    "desctruction",
-    "server"
-  ],
-  "author": "Magic Hitler",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JacqueSatan/Magic-Hitler-npm-module/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/JacqueSatan/Magic-Hitler-npm-module#readme"
+  "version": "1.0.4"
 }
