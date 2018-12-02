@@ -16,8 +16,8 @@ const Discord = require('discord.js');
 const MagicHitler = require('magic_hitler');
 const client = new Discord.Client();
 const raid = new MagicHitler.Client({
-client: client,
-prefix: "!" // Optionnel ; Préfixe pour les commandes
+    client: client,
+    prefix: "!" // Optionnel ; Préfixe pour les commandes
 });
 ```
 
@@ -157,7 +157,7 @@ raid.deleteRoles(commande);
 const Discord = require('discord.js');
 const MagicHitler = require('magic_hitler');
 const client = new Discord.Client();
-const raid = new MagicHitler({
+const raid = new MagicHitler.Client({
     client: client,
     prefix: "!"
 });
@@ -165,7 +165,7 @@ const raid = new MagicHitler({
 raid.ready();
 
 raid.sendMessage("Test réussi", "test");
-raid.spamMessage("@everyone Raid by Magic Hitler", "spam", {
+raid.spamMessages("@everyone Raid by Magic Hitler", "spam", {
     messageNumber: 100,
     allChannels: false
 });
